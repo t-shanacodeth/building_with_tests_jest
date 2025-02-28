@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/t-shanacodeth/building_with_tests_jest#readme",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
