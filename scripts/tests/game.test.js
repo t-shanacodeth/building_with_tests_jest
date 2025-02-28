@@ -15,6 +15,15 @@ beforeAll(() => {
 
 describe("game object contains correct keys", () => {
     test("score key exists", () => {
-        expect("score" in game).toBe(true);
+        expect("score" in game).toBeTruthy();
+    });
+    test("currentGame key exists", () => {
+        expect("currentGame" in game).toBeTruthy();
+    });
+    test("playerMoves key exists", () => {
+        expect("playerMoves" in game).toBeTruthy();
+    });
+    test("choices key exists", () => {
+        expect("choices" in game).toBeTruthy();
     });
 });
