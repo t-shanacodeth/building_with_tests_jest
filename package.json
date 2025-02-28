@@ -1,0 +1,22 @@
+{
+  "name": "building_with_tests_jest",
+  "version": "1.0.0",
+  "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-shanacodeth/building_with_tests_jest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-shanacodeth/building_with_tests_jest/issues"
+  },
+  "homepage": "https://github.com/t-shanacodeth/building_with_tests_jest#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
