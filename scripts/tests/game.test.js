@@ -3,7 +3,7 @@
  * @jest-environment-options {"url": "https://jestjs.io/"}
  */
 
-const { game, newGame, showScore } = require("../game");
+const { game, newGame, showScore, addTurn, } = require("../game");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -31,24 +31,24 @@ describe("game object contains correct keys", () => {
     });
 });
 
-describe("newGame function works correctly", () => {
+describe("newGame works correctly", () => {
     beforeAll(() => {
         game.score = 12;
         game.playerMoves = ["button1", "button2"];
-        game.currentGame = ["button2", "button4"];
-        document.getElementById("score").innerText = 12;
+        game.currentGame = ["button1", "button2"];
+        document.getElementById("score").innerText = "12";
         newGame();
     });
-    test("newGame should set game score to 0", () => {
+    test("should set game score to zero", () => {
         expect(game.score).toEqual(0);
     });
-    test("playerMoves should set to 0", () => {
-        expect(game.playerMoves.length).toEqual(0);
+    test("should add one move to the computer's game array", () => {
+        expect(game.currentGame.length).toBe(1);
     });
-    test("currentGame should set to 0", () => {
-        expect(game.currentGame.length).toEqual(0);
+    test("should clear the player moves array", () => {
+        expect(game.playerMoves.length).toBe(0);
     });
-    test("should display 0 for the element wiht id of score", () => {
+    test("should display 0 for the element with id of score", () => {
         expect(document.getElementById("score").innerText).toEqual(0);
     });
 });
