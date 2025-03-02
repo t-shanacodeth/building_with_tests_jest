@@ -82,10 +82,6 @@ h2 {
     font-weight: 600;
 }
 
-.button:hover {
-    border-color: #009FE3;
-}
-
 .light {
-    opacity: 0.4;
+    opacity: 0.6;
 }
